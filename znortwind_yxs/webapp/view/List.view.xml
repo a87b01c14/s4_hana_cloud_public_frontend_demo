@@ -1,0 +1,22 @@
+<mvc:View controllerName="sap.btp.znortwindyxs.controller.List" xmlns:mvc="sap.ui.core.mvc"
+  displayBlock="true" xmlns="sap.m">
+  <Page id="listPage" title="{i18n>ListTitle}">
+    <subHeader>
+			<Bar id="_IDGenBar1">
+				<contentLeft>
+					<SearchField id="_IDGenSearchField1" search="handleSearch"/>
+				</contentLeft>
+			</Bar>
+		</subHeader>
+		<List id="list" items="{/ZCE_NORTHWIND}">
+			<ObjectListItem id="_IDGenObjectListItem1" type="Navigation" press="handleListItemPress" title="{product_name}" number="{unit_price}" numberUnit="{i18n>Currency}">
+				<attributes>
+					<ObjectAttribute id="_IDGenObjectAttribute1" text="{quantity_per_unit}"/>
+				</attributes>
+				<firstStatus>
+					<ObjectStatus id="_IDGenObjectStatus1" text="{= ${discontinued} === 'Yes' ? ${i18n>Discontinued} : ${i18n>Available} }" state="{= ${discontinued} === 'Yes' ? 'Error' : 'Success' }"/>
+				</firstStatus>
+			</ObjectListItem>
+		</List>
+  </Page>
+</mvc:View>

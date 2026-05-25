@@ -1,0 +1,23 @@
+{
+  "generationParameters": {
+    "generationDate": "Sat May 23 2026 10:50:45 GMT+0800 (中国标准时间)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "OData URL",
+    "metadataFilename": "",
+    "serviceUrl": "https://my201252.s4hana.sapcloud.cn/sap/opu/odata4/sap/zsb_nortwind/srvd/sap/zsd_northwind/0001",
+    "appName": "znortwind_yxs",
+    "appTitle": "Tutorial",
+    "appDescription": "Displays products",
+    "appNamespace": "sap.btp",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.142.12",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.22.0",
+    "template": "Basic V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}
