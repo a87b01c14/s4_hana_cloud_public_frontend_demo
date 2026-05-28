@@ -1,0 +1,23 @@
+{
+  "generationParameters": {
+    "generationDate": "Thu May 28 2026 09:53:03 GMT+0800 (中国标准时间)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "None",
+    "metadataFilename": "",
+    "serviceUrl": "N/A",
+    "appName": "zui5_imageerrorwithillustration_yxs",
+    "appTitle": "Image error handling with IllustratedMessage",
+    "appDescription": "Handle errors using the sap.m.IllustratedMessage with the error event.",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.148.0",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.22.0",
+    "template": "Basic",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}

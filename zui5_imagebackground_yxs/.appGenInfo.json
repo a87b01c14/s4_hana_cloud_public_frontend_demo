@@ -1,0 +1,23 @@
+{
+  "generationParameters": {
+    "generationDate": "Wed May 27 2026 19:35:57 GMT+0800 (中国标准时间)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "None",
+    "metadataFilename": "",
+    "serviceUrl": "N/A",
+    "appName": "zui5_imagebackground_yxs",
+    "appTitle": "Image with ImageMode.Background",
+    "appDescription": "Visualizes the state of the control when the mode property is set to ImageMode.Background.",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.148.0",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.22.0",
+    "template": "Basic",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "generationParameters": {
+    "generationDate": "Wed May 27 2026 18:57:25 GMT+0800 (中国标准时间)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "None",
+    "metadataFilename": "",
+    "serviceUrl": "N/A",
+    "appName": "zui5_image_yxs",
+    "appTitle": "Image",
+    "appDescription": "Images are faster than words and attract people's attention. Images can also have an active state or be used in SVG format.",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.148.0",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.22.0",
+    "template": "Basic",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}
