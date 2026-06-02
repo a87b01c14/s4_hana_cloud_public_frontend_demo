@@ -1,0 +1,9 @@
+<mvc:View controllerName="zui5walkthroughyxs.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Shell>
+        <App id="app" class="myAppDemoWT">
+        </App>
+    </Shell>
+</mvc:View>

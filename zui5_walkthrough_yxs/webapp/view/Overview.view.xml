@@ -1,0 +1,18 @@
+<mvc:View controllerName="zui5walkthroughyxs.controller.Overview"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <landmarkInfo>
+            <PageAccessibleLandmarkInfo
+                rootRole="Region"
+                rootLabel="{i18n>Overview_rootLabel}"
+                contentRole="Main"
+                contentLabel="{i18n>Overview_contentLabel}"
+                headerRole="Banner"
+                headerLabel="{i18n>Overview_headerLabel}" />
+        </landmarkInfo>
+        <mvc:XMLView viewName="zui5walkthroughyxs.view.HelloPanel" />
+        <mvc:XMLView viewName="zui5walkthroughyxs.view.InvoiceList" />
+    </Page>
+</mvc:View>
