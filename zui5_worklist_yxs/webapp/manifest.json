@@ -1,0 +1,165 @@
+{
+  "_version": "1.83.0",
+  "sap.app": {
+    "id": "zui5worklistyxs",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.22.0",
+      "toolsId": "25d1a25e-9174-4a19-9fed-73adf617254b"
+    },
+    "dataSources": {
+      "Remote": {
+        "uri": "/V2/Northwind/Northwind.svc/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      },
+      "Cloud": {
+        "uri": "/sap/opu/odata4/sap/zapi_invoice_yxs_o4/srvd_a2x/sap/zapi_invoice_yxs_o4/0001/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "odataVersion": "4.0"
+        }
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "zui5_worklist_yxs-display": {
+          "semanticObject": "zui5_worklist_yxs",
+          "action": "display",
+          "title": "{{zui5_worklist_yxs-display.flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.148.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "zui5worklistyxs.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "Cloud",
+        "preload": true,
+        "settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "zui5worklistyxs.view",
+        "async": true,
+        "viewPath": "zui5worklistyxs.view",
+        "bypassed": {
+          "target": [
+            "notFound"
+          ]
+        }
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "worklist",
+          "target": [
+            "worklist"
+          ]
+        },
+        {
+          "pattern": "Products/{objectId}",
+          "name": "object",
+          "target": [
+            "object"
+          ]
+        }
+      ],
+      "targets": {
+        "worklist": {
+          "name": "Worklist",
+          "id": "worklist",
+          "level": 1,
+          "title": "{i18n>worklistViewTitle}"
+        },
+        "object": {
+          "name": "Object",
+          "id": "object",
+          "level": 2,
+          "title": "{i18n>objectViewTitle}"
+        },
+        "objectNotFound": {
+          "name": "ObjectNotFound",
+          "id": "objectNotFound"
+        },
+        "notFound": {
+          "name": "NotFound",
+          "id": "notFound"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "zui5worklistyxs.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}
